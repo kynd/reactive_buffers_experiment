@@ -1,0 +1,32 @@
+{
+  "name": "reactive_buffers_experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "scripts": {
+    "start": "budo -H 127.0.0.1 -p 9001 --title experiment index.js:bundle.js --open --live",
+    "bundle": "browserify index.js -o bundle.js"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "budo": "*"
+  },
+  "author": "kynd",
+  "license": "ISC",
+  "dependencies": {
+    "a-big-triangle": "^1.0.3",
+    "gl-clear": "^2.0.0",
+    "gl-fbo": "^2.0.5",
+    "gl-geometry": "^3.1.1",
+    "gl-matrix": "^2.3.1",
+    "gl-now": "^1.4.0",
+    "gl-shader": "^4.2.1",
+    "glslify": "^6.1.0",
+    "lgp": "^1.0.4"
+  }
+}
