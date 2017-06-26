@@ -16,7 +16,7 @@ void main() {
   color = mixColor(color, vec4(0.1, 0.1, 0.2, 1.0), tSamp.r);
   color = mixColor(color, vec4(0.8, 0.0, 0.0, 1.0), tSamp.g);
   color = mixColor(color, vec4(0.9, 0.98, 0.98, 1.0), tSamp.b);
-  float v = color.r * 0.2126 + color.g * 0.7152 + color.b * 0.0722;
+  float v = pow(color.r * 0.2126 + color.g * 0.7152 + color.b * 0.0722, 1.5);
 
   gl_FragColor = vec4(v,v,v,1.0);
   //gl_FragColor = color;
