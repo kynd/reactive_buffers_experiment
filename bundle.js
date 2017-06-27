@@ -195,6 +195,7 @@ class glRendererBase {
   constructor() {
     this.frameCount = 0;
     this.shell = now();
+    this.shell.preventDefults = false;
     this.shell.on("gl-init", this.__init.bind(this));
     this.running = true;
   }
