@@ -10,4 +10,4 @@ https://kynd.github.io/reactive_buffers_experiment/
 ## video
 https://vimeo.com/223235469
 
-[screenshot](https://github.com/kynd/reactive_buffers_experiment/blob/master/screenshot.jpg?raw=true)
+<img src="https://github.com/kynd/reactive_buffers_experiment/blob/master/screenshot.jpg?raw=true" alc="screenshot">
