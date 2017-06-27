@@ -1,4 +1,4 @@
-precision mediump float;
+precision highp float;
 uniform sampler2D buffer;
 uniform sampler2D buffer0;
 uniform sampler2D buffer1;

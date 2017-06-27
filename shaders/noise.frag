@@ -1,4 +1,4 @@
-precision mediump float;
+precision highp float;
 
 uniform float frameCount;
 uniform vec2 dims;

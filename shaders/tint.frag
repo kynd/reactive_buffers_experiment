@@ -1,5 +1,5 @@
 
-precision mediump float;
+precision highp float;
 uniform float frameCount;
 uniform int index;
 uniform sampler2D buffer;
