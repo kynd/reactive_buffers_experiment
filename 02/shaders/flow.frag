@@ -34,7 +34,7 @@ vec4 update() {
   flSum /= 4.0;
 
   vec4 color = samp;
-  color.rgb += flSum.rgb * 0.2;
+  color.rgb += flSum.rgb * 0.11;
   color = clamp(color, vec4(0.0), vec4(1.0));
   return color;
 }

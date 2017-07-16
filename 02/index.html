@@ -4,7 +4,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<meta charset="utf-8">
 		<title>reactive buffers experiment 01</title>
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<style>
+		body {background: #000000;}
+		p {
+		  position:absolute;
+		  top: 0;;
+		  margin: auto;
+		  width:100%;
+		  padding: 8px;
+		  text-align: center;
+		  font-family: monospace;
+		  font-size: 14px;
+		  color: #ffffff;
+		  background: rgba(0,0,0,0.5);
+		  z-index: 10;
+		}
+		p.opaque {
+		  opacity: 0;
+		}
+		p.fade {
+		  animation: 3s fade 2s forwards;
+		}
+		a {
+		  color: #FFFFFF;
+		}
+
+		@keyframes fade {
+		  from {
+		    opacity: 1;
+		  }
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+		.not-selected {
+		  opacity: 0.5;
+		}
+		</style>
 	</head>
 	<body>
 		<p class="fade"><a href="../01/index.html" class="not-selected">01</a> 02</a> | [1]-[3] to switch rendering mode | <a href="https://github.com/kynd/reactive_buffers_experiment">github repository</a></p>
