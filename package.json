@@ -9,8 +9,10 @@
     ]
   },
   "scripts": {
-    "start": "budo -H 127.0.0.1 -p 9001 --title experiment index.js:bundle.js --open --live",
-    "bundle": "browserify index.js -o bundle.js"
+    "01": "budo -H 127.0.0.1 -p 9000 --title example --dir 01 01/index.js:bundle.js --open --live",
+    "bundle01": "browserify 01/index.js -o 01/bundle.js",
+    "02": "budo -H 127.0.0.1 -p 9000 --title example --dir 02 02/index.js:bundle.js --open --live",
+    "bundle02": "browserify 02/index.js -o 02/bundle.js"
   },
   "devDependencies": {
     "browserify": "*",

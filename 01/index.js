@@ -1,6 +1,6 @@
 // -----------------------------------------------------------
-let bufferExperimentBase = require('./lib/bufferExperimentBase.js');
-let pingpongBuffer = require('./lib/pingpongBuffer');
+let bufferExperimentBase = require('../lib/bufferExperimentBase.js');
+let pingpongBuffer = require('../lib/pingpongBuffer');
 let geometry = require('gl-geometry');
 let glShader = require('gl-shader');
 let glslify = require('glslify');
