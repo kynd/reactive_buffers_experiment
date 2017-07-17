@@ -10,7 +10,7 @@ https://kynd.github.io/reactive_buffers_experiment/01
 
 https://kynd.github.io/reactive_buffers_experiment/02
 
-* The demos may not render properly or the result may vary depending on your device and GPU likely to be due to floating poing textures (investigating). Tested only on Macbook Pro (AMD Radeon / Intel Iris), Acer Switch 12 (Intel HD)
+* Tested on Mac OS + AMD Radeon/Intel Iris, Windows 10 + Intel HD, Ubuntu + Titan
 
 ## video
 
