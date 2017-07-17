@@ -51,9 +51,9 @@ void main() {
   vec4 color;
   vec2 coord = vTexCoord * dims / 5002.0 + vec2(frameCount) * 0.00005;
   float n = coord.x > 512.0 ? 0.0 : 1.0;
-  float r = clamp(0.0, 1.0, fbm(coord * 64.0));
-  float g = clamp(0.0, 1.0, fbm(coord * 32.0 + vec2(123.4)));
-  float b = clamp(0.0, 1.0, fbm(coord + vec2(1234.5)));
+  float r = clamp(fbm(coord * 64.0), 0.0, 1.0);
+  float g = clamp(fbm(coord * 32.0 + vec2(123.4)), 0.0, 1.0);
+  float b = clamp(fbm(coord + vec2(1234.5)), 0.0, 1.0);
   color = vec4(r, g, b, 1.0);
   gl_FragColor = color;
 }

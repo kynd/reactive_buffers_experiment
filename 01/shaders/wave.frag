@@ -29,7 +29,7 @@ void main() {
 
   float vc = samp.g;
   samp.b = va * 2.0 + 0.1 * (vb - va * 4.0) - vc;
-  color = clamp(vec4(0.0), vec4(1.0), samp.brga);
+  color = clamp(samp.brga, vec4(0.0), vec4(1.0));
 
   gl_FragColor = color;
 }

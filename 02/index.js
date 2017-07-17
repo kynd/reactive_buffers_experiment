@@ -21,7 +21,7 @@ class bufferExperiment extends bufferExperimentBase {
   }
 
   init() {
-    this.setup(1280, 900);
+    this.setup(1280, 720);
     let gl = this.shell.gl;
     this.addBuffer("wave", glslify('./shaders/wave.frag'));
     this.addBuffer("flow", glslify('./shaders/flow.frag'));
